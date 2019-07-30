@@ -1,0 +1,31 @@
+.contacts-wrapper {
+  #contact-list {
+    list-style-type: none;
+    display: grid;
+    grid-template-rows: 2fr 2fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2vw;
+    .contact-item {
+      border: 1px solid black;
+      padding: 10px;
+    }
+  }
+  .btn-wrapper {
+    text-align: center;
+    form {
+      width: 30%;
+      margin: 0 auto;
+      .form-group {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+      }
+    }
+    .btn {
+      border: 1px solid black;
+      padding: 10px 0;
+      width: 200px;
+      margin-top: 20px;
+    }
+  }
+}

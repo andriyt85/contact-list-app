@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ContactCard from '../components/ContactCard';
-import '../index.css';
+import '../index.scss';
 import AddContact from './AddContact';
 import {CONTACTS} from "../ContactList";
 
@@ -12,7 +12,7 @@ class Contact extends Component {
       searchText: '',
       searchResult: [],
       contactList: []
-    }
+    };
 
     this.handleNewContact = this.handleNewContact.bind(this);
   }
@@ -40,11 +40,11 @@ class Contact extends Component {
 
 
     return (
-    	<div>
+    	<div className="contacts-wrapper">
           	<ul className="list-group" id="contact-list">
            		{ this.state.contactList.map(
                   (contact) =>
-                  <li key={contact.email} className="list-group-item">
+                  <li key={contact.email} className="list-group-item contact-item">
                     <ContactCard contact = {contact}/>
                   </li>
               	)}

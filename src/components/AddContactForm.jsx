@@ -24,6 +24,11 @@ const AddContactForm = ({onInputChange, onFormSubmit}) =>
 			    <input type="number" className="form-control" name="phoneNumber" onChange={onInputChange} placeholder="Phone Number" required/>
 			 </div>
 
+			<div className="form-group">
+			    <label htmlFor="phoneNumber">Birthday</label>
+			    <input type="text" className="form-control" name="birthday" onChange={onInputChange} placeholder="Birthday" required/>
+			 </div>
+
 			<button type="submit" onClick={onFormSubmit} className="btn btn-primary"> Submit </button>
 		</form>
 	)

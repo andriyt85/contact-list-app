@@ -59,7 +59,7 @@ export default class AddContact extends Component {
 
     render() {
         return (
-            <div>
+            <div className="btn-wrapper">
                 {this.state.isHidden === false ? this.renderForm() :
                     <button onClick={this.showAddContactBox} className="btn"> Add Contact </button>}
             </div>
